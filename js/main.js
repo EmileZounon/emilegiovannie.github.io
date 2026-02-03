@@ -33,9 +33,10 @@ if (navToggle) {
 // ==========================================
 
 const navbar = document.getElementById('navbar');
+const hasHeroOrHeader = document.querySelector('.hero') || document.querySelector('.page-header');
 
 function updateNavbar() {
-    if (window.scrollY > 50) {
+    if (!hasHeroOrHeader || window.scrollY > 50) {
         navbar.classList.add('scrolled');
     } else {
         navbar.classList.remove('scrolled');
@@ -49,10 +50,17 @@ updateNavbar();
 // Active Nav Link Highlighting
 // ==========================================
 
-const currentPage = window.location.pathname.split('/').pop() || 'index.html';
+const path = window.location.pathname;
+const currentPage = path.split('/').pop() || 'index.html';
+// For blog subdirectory pages, detect the parent section
+const inBlogSubdir = path.includes('/blog/');
+
 document.querySelectorAll('.nav-link').forEach(link => {
     const href = link.getAttribute('href');
-    if (href === currentPage) {
+    const hrefFile = href.split('/').pop();
+    if (inBlogSubdir && hrefFile === 'blog.html') {
+        link.classList.add('active');
+    } else if (!inBlogSubdir && hrefFile === currentPage) {
         link.classList.add('active');
     } else {
         link.classList.remove('active');
@@ -135,3 +143,11 @@ function initLightbox() {
 }
 
 initLightbox();
+
+// ==========================================
+// Page Load Animation
+// ==========================================
+
+window.addEventListener('DOMContentLoaded', () => {
+    document.body.classList.add('loaded');
+});

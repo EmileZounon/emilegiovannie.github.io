@@ -888,6 +888,16 @@ p {
     transform: translateY(0);
 }
 
+/* Page load fade-in */
+body {
+    opacity: 0;
+    transition: opacity 0.4s ease;
+}
+
+body.loaded {
+    opacity: 1;
+}
+
 /* ==========================================
    Responsive
    ========================================== */
@@ -950,5 +960,25 @@ p {
 
     .blog-post-header h1 {
         font-size: 1.75rem;
+    }
+
+    .education-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .cert-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .gallery-grid {
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    }
+
+    .page-header {
+        padding: 6rem 0 2rem;
+    }
+
+    .stat-number {
+        font-size: 2rem;
     }
 }
