@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Custom GPT Prompt Library — Emile Giovannie ZOUNON</title>
+    <title>Custom GPT Prompt Library | Emile Giovannie ZOUNON</title>
     <meta name="description" content="Production-grade custom GPT prompts for meeting recaps, workforce presentations, and data visualizations.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -32,7 +32,7 @@
     <header class="page-header">
         <div class="container">
             <h1>Custom GPT Prompt Library</h1>
-            <p>Production-grade prompts for IBM workflow automation</p>
+            <p>Production-grade prompts I built for IBM workflow automation</p>
         </div>
     </header>
 
@@ -42,23 +42,22 @@
                 <article class="project-detail">
 
                     <div class="fade-in">
-                        <h2>Overview</h2>
-                        <p>This collection of custom GPT prompts was built to automate recurring workflows at IBM. Each prompt is engineered for production use — with structured inputs, detailed system instructions, and consistent output formatting. Together, they demonstrate how prompt engineering can transform manual, time-intensive tasks into repeatable AI-assisted workflows.</p>
+                        <h2>Why I Built These</h2>
+                        <p>At IBM, I kept running into the same time-consuming tasks: summarizing meeting transcripts, building presentation outlines, creating data visualizations for partner reviews. So I built custom GPT prompts to automate them. Each one has structured inputs, detailed system instructions, and consistent output formatting so the results are usable right away, no editing needed.</p>
                     </div>
 
-                    <!-- Prompt 1: Meeting Recap Generator -->
                     <div class="fade-in">
                         <h2><i class="fas fa-microphone-alt" style="color: var(--accent); margin-right: 0.5rem;"></i> Meeting Recap Generator</h2>
-                        <p>Transforms raw meeting transcripts into structured, professional recaps ready for stakeholder distribution.</p>
+                        <p>Takes a raw meeting transcript and turns it into a structured, professional recap ready to send to stakeholders.</p>
 
                         <h3>How It Works</h3>
                         <ol style="line-height: 1.8; color: var(--text);">
-                            <li><strong>Input:</strong> Paste a raw transcript (from Teams, Zoom, Otter.ai, or manual notes)</li>
-                            <li><strong>Processing:</strong> The GPT identifies speakers, extracts key topics, decisions, and action items</li>
-                            <li><strong>Output:</strong> A formatted recap with meeting metadata, summary, discussion points, action items with owners/deadlines, and next steps</li>
+                            <li><strong>Input:</strong> Paste a raw transcript from Teams, Zoom, Otter.ai, or manual notes</li>
+                            <li><strong>Processing:</strong> The GPT identifies speakers, pulls out key topics, decisions, and action items</li>
+                            <li><strong>Output:</strong> A formatted recap with meeting metadata, summary, discussion points, action items with owners and deadlines, and next steps</li>
                         </ol>
 
-                        <h3>Key Design Decisions</h3>
+                        <h3>Design Choices</h3>
                         <ul style="line-height: 1.8; color: var(--text);">
                             <li>Handles messy, unformatted transcripts with speaker identification heuristics</li>
                             <li>Separates <strong>decisions made</strong> from <strong>items still under discussion</strong></li>
@@ -67,13 +66,12 @@
                         </ul>
 
                         <div class="quote-block">
-                            <p><strong>Use case:</strong> Weekly partner check-ins with 30+ nonprofit organizations — reducing 45-minute transcript review to a 2-minute GPT interaction.</p>
+                            <p><strong>Use case:</strong> Weekly partner check-ins with 30+ nonprofit organizations. This turned a 45-minute transcript review into a 2-minute GPT interaction.</p>
                         </div>
                     </div>
 
-                    <!-- Prompt 2: AI Workforce Learning Deck Designer -->
                     <div class="fade-in">
-                        <h2><i class="fas fa-presentation" style="color: var(--accent); margin-right: 0.5rem;"></i> AI Workforce Learning Deck Designer</h2>
+                        <h2><i class="fas fa-chalkboard" style="color: var(--accent); margin-right: 0.5rem;"></i> AI Workforce Learning Deck Designer</h2>
                         <p>Generates structured presentation outlines for CSR and workforce development topics, following IBM's communication standards.</p>
 
                         <h3>How It Works</h3>
@@ -83,51 +81,50 @@
                             <li><strong>Output:</strong> Slide-by-slide outline with titles, bullet points, speaker notes, and visualization suggestions</li>
                         </ol>
 
-                        <h3>Key Design Decisions</h3>
+                        <h3>Design Choices</h3>
                         <ul style="line-height: 1.8; color: var(--text);">
-                            <li>Follows a narrative structure: Context → Challenge → Solution → Impact → Call to Action</li>
+                            <li>Follows a narrative structure: Context, Challenge, Solution, Impact, Call to Action</li>
                             <li>Each slide includes speaker notes for the presenter</li>
-                            <li>Suggests data visualizations (bar charts, timelines, maps) where appropriate</li>
-                            <li>Adapts tone for internal stakeholders vs. external partners vs. executive audiences</li>
+                            <li>Suggests data visualizations (bar charts, timelines, maps) where they make sense</li>
+                            <li>Adapts tone depending on whether the audience is internal, external partners, or executives</li>
                         </ul>
 
                         <div class="quote-block">
-                            <p><strong>Use case:</strong> Quarterly CSR impact presentations for IBM SkillsBuild leadership, turning raw metrics into compelling visual narratives.</p>
+                            <p><strong>Use case:</strong> Quarterly CSR impact presentations for IBM SkillsBuild leadership. Turns raw metrics into a visual narrative.</p>
                         </div>
                     </div>
 
-                    <!-- Prompt 3: IBM Slide Deck Builder -->
                     <div class="fade-in">
                         <h2><i class="fas fa-chart-bar" style="color: var(--accent); margin-right: 0.5rem;"></i> IBM Slide Deck Builder with D3.js</h2>
-                        <p>Creates data-rich slide decks with interactive D3.js visualizations embedded directly into the presentation workflow.</p>
+                        <p>Creates data-rich slide decks with interactive D3.js visualizations you can embed directly into web-based presentations.</p>
 
                         <h3>How It Works</h3>
                         <ol style="line-height: 1.8; color: var(--text);">
                             <li><strong>Input:</strong> Dataset, presentation context, and target audience</li>
-                            <li><strong>Processing:</strong> Analyzes data patterns and selects appropriate visualization types</li>
+                            <li><strong>Processing:</strong> Analyzes data patterns and selects the right visualization types</li>
                             <li><strong>Output:</strong> Slide structure with D3.js code snippets for each visualization, plus narrative framing</li>
                         </ol>
 
-                        <h3>Key Design Decisions</h3>
+                        <h3>Design Choices</h3>
                         <ul style="line-height: 1.8; color: var(--text);">
-                            <li>D3.js visualizations are self-contained and ready to embed in web-based presentations</li>
+                            <li>D3.js visualizations are self-contained and ready to embed</li>
                             <li>Supports bar charts, line graphs, pie charts, geographic maps, and network diagrams</li>
                             <li>Color schemes follow IBM's Carbon Design System guidelines</li>
                             <li>Each visualization includes accessibility attributes (ARIA labels, color-blind safe palettes)</li>
                         </ul>
 
                         <div class="quote-block">
-                            <p><strong>Use case:</strong> Data-driven partner review decks showing learner engagement metrics, completion rates, and geographic distribution across IBM SkillsBuild's global network.</p>
+                            <p><strong>Use case:</strong> Data-driven partner review decks showing learner engagement, completion rates, and geographic distribution across IBM SkillsBuild's global network.</p>
                         </div>
                     </div>
 
                     <div class="fade-in">
-                        <h2>Technical Approach</h2>
-                        <p>All prompts follow a consistent engineering pattern:</p>
+                        <h2>What They Have in Common</h2>
+                        <p>All three prompts follow the same engineering pattern:</p>
                         <div class="card-grid">
                             <div class="card">
                                 <h3 class="card-title">System Instruction Layer</h3>
-                                <p class="card-description">Detailed persona, constraints, and output format defined in the system prompt. This ensures consistent behavior regardless of user input variation.</p>
+                                <p class="card-description">A detailed persona, constraints, and output format defined in the system prompt. This keeps behavior consistent no matter what the user types in.</p>
                             </div>
                             <div class="card">
                                 <h3 class="card-title">Structured Input Schema</h3>
@@ -135,7 +132,7 @@
                             </div>
                             <div class="card">
                                 <h3 class="card-title">Output Templating</h3>
-                                <p class="card-description">Outputs follow rigid templates with consistent sections, formatting, and metadata — making them immediately usable without post-editing.</p>
+                                <p class="card-description">Outputs follow rigid templates with consistent sections, formatting, and metadata. You can use them right away without post-editing.</p>
                             </div>
                         </div>
                     </div>
