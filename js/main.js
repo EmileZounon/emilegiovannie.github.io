@@ -52,15 +52,18 @@ updateNavbar();
 
 const path = window.location.pathname;
 const currentPage = path.split('/').pop() || 'index.html';
-// For blog subdirectory pages, detect the parent section
+// For subdirectory pages, detect the parent section
 const inBlogSubdir = path.includes('/blog/');
+const inProjectsSubdir = path.includes('/projects/');
 
 document.querySelectorAll('.nav-link').forEach(link => {
     const href = link.getAttribute('href');
     const hrefFile = href.split('/').pop();
     if (inBlogSubdir && hrefFile === 'blog.html') {
         link.classList.add('active');
-    } else if (!inBlogSubdir && hrefFile === currentPage) {
+    } else if (inProjectsSubdir && hrefFile === 'work.html') {
+        link.classList.add('active');
+    } else if (!inBlogSubdir && !inProjectsSubdir && hrefFile === currentPage) {
         link.classList.add('active');
     } else {
         link.classList.remove('active');

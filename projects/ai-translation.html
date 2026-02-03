@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Translation Project — Emile Giovannie ZOUNON</title>
+    <meta name="description" content="End-to-end AI translation workflow comparing ChatGPT, DeepL, and IBM Watsonx for multilingual e-learning content.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="../index.html" class="nav-logo">EGZ</a>
+            <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation">
+                <span class="hamburger"></span>
+            </button>
+            <ul class="nav-menu" id="nav-menu">
+                <li><a href="../index.html" class="nav-link">Home</a></li>
+                <li><a href="../work.html" class="nav-link">Work</a></li>
+                <li><a href="../blog.html" class="nav-link">Blog</a></li>
+                <li><a href="../gallery.html" class="nav-link">Gallery</a></li>
+                <li><a href="../about.html" class="nav-link">About</a></li>
+                <li><a href="../contact.html" class="nav-link">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header class="page-header">
+        <div class="container">
+            <h1>AI Translation Project</h1>
+            <p>Comparing ChatGPT, DeepL, and IBM Watsonx for multilingual e-learning</p>
+        </div>
+    </header>
+
+    <main>
+        <section class="section">
+            <div class="container">
+                <article class="project-detail">
+
+                    <div class="fade-in">
+                        <h2>Overview</h2>
+                        <p>This project developed an end-to-end AI translation workflow to evaluate how well leading AI tools handle multilingual e-learning content. The goal: determine which platform can reliably translate a full course into multiple languages while preserving instructional quality, terminology accuracy, and learner experience.</p>
+                        <p>The workflow batch-translated a complete e-learning course into <strong>9 languages</strong> in under <strong>30 minutes</strong>, using API scripts built in Python. A volunteer evaluation framework was designed to assess translation quality across dimensions like fluency, accuracy, and cultural appropriateness.</p>
+                    </div>
+
+                    <div class="fade-in">
+                        <h2>Tools Compared</h2>
+                        <div class="card-grid">
+                            <div class="card">
+                                <h3 class="card-title"><i class="fas fa-robot" style="color: var(--accent); margin-right: 0.5rem;"></i>ChatGPT (GPT-4)</h3>
+                                <p class="card-description">OpenAI's large language model accessed via API. Strong contextual understanding and ability to handle nuanced educational content. Supports prompt engineering for domain-specific translation instructions.</p>
+                                <div class="card-tags">
+                                    <span class="tag tag-ai">GPT-4 API</span>
+                                    <span class="tag tag-tech">Python</span>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <h3 class="card-title"><i class="fas fa-language" style="color: var(--accent); margin-right: 0.5rem;"></i>DeepL</h3>
+                                <p class="card-description">Specialized neural machine translation service known for high-quality European language translations. API-based with glossary support for consistent terminology across documents.</p>
+                                <div class="card-tags">
+                                    <span class="tag tag-ai">DeepL API</span>
+                                    <span class="tag tag-tech">Glossary Support</span>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <h3 class="card-title"><i class="fas fa-cloud" style="color: var(--accent); margin-right: 0.5rem;"></i>IBM Watsonx</h3>
+                                <p class="card-description">IBM's enterprise AI platform with language translation capabilities. Evaluated for integration potential within IBM SkillsBuild's existing infrastructure and enterprise compliance requirements.</p>
+                                <div class="card-tags">
+                                    <span class="tag tag-ai">Watsonx</span>
+                                    <span class="tag tag-tech">Enterprise</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="fade-in">
+                        <h2>Methodology</h2>
+                        <ol style="line-height: 1.8; color: var(--text);">
+                            <li><strong>Content Selection</strong> — Selected a representative e-learning course with varied content types: instructional text, quiz questions, UI labels, and multimedia descriptions.</li>
+                            <li><strong>API Script Development</strong> — Built Python scripts to batch-translate content through each platform's API, handling rate limits, error recovery, and output formatting.</li>
+                            <li><strong>Multi-language Translation</strong> — Translated the full course into 9 target languages, measuring speed, cost, and completeness for each tool.</li>
+                            <li><strong>Quality Evaluation Framework</strong> — Designed a volunteer-based evaluation rubric assessing fluency, accuracy, terminology consistency, and cultural appropriateness.</li>
+                            <li><strong>Comparative Analysis</strong> — Compiled results into a recommendation matrix with scoring across quality, speed, cost, and integration criteria.</li>
+                        </ol>
+                    </div>
+
+                    <div class="fade-in">
+                        <h2>Key Findings</h2>
+                        <div class="quote-block">
+                            <p><strong>GPT-4</strong> excelled at contextual understanding and handling ambiguous educational content, but required careful prompt engineering to maintain consistency across long documents.</p>
+                        </div>
+                        <div class="quote-block">
+                            <p><strong>DeepL</strong> delivered the most polished translations for European languages with minimal post-editing needed. Glossary features ensured terminology consistency.</p>
+                        </div>
+                        <div class="quote-block">
+                            <p><strong>IBM Watsonx</strong> offered the strongest enterprise integration path and compliance features, making it the best fit for organizations with existing IBM infrastructure.</p>
+                        </div>
+                    </div>
+
+                    <div class="fade-in">
+                        <h2>Recommendations</h2>
+                        <table style="width: 100%; border-collapse: collapse; margin: 1.5rem 0;">
+                            <thead>
+                                <tr style="background-color: var(--primary); color: white;">
+                                    <th style="padding: 0.75rem 1rem; text-align: left;">Criteria</th>
+                                    <th style="padding: 0.75rem 1rem; text-align: left;">Best Tool</th>
+                                    <th style="padding: 0.75rem 1rem; text-align: left;">Notes</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr style="border-bottom: 1px solid #e0e0e0;">
+                                    <td style="padding: 0.75rem 1rem;">Translation Quality</td>
+                                    <td style="padding: 0.75rem 1rem;">DeepL</td>
+                                    <td style="padding: 0.75rem 1rem;">Especially strong for European languages</td>
+                                </tr>
+                                <tr style="border-bottom: 1px solid #e0e0e0; background-color: var(--light);">
+                                    <td style="padding: 0.75rem 1rem;">Contextual Understanding</td>
+                                    <td style="padding: 0.75rem 1rem;">GPT-4</td>
+                                    <td style="padding: 0.75rem 1rem;">Best at handling nuanced instructional content</td>
+                                </tr>
+                                <tr style="border-bottom: 1px solid #e0e0e0;">
+                                    <td style="padding: 0.75rem 1rem;">Enterprise Integration</td>
+                                    <td style="padding: 0.75rem 1rem;">Watsonx</td>
+                                    <td style="padding: 0.75rem 1rem;">Seamless with IBM ecosystem</td>
+                                </tr>
+                                <tr style="border-bottom: 1px solid #e0e0e0; background-color: var(--light);">
+                                    <td style="padding: 0.75rem 1rem;">Speed / Throughput</td>
+                                    <td style="padding: 0.75rem 1rem;">DeepL</td>
+                                    <td style="padding: 0.75rem 1rem;">Fastest batch processing times</td>
+                                </tr>
+                                <tr style="border-bottom: 1px solid #e0e0e0;">
+                                    <td style="padding: 0.75rem 1rem;">Cost Efficiency</td>
+                                    <td style="padding: 0.75rem 1rem;">DeepL</td>
+                                    <td style="padding: 0.75rem 1rem;">Best value per character translated</td>
+                                </tr>
+                                <tr style="background-color: var(--light);">
+                                    <td style="padding: 0.75rem 1rem;">Customizability</td>
+                                    <td style="padding: 0.75rem 1rem;">GPT-4</td>
+                                    <td style="padding: 0.75rem 1rem;">Prompt engineering allows domain-specific tuning</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <div class="fade-in">
+                        <h2>Impact</h2>
+                        <p>This research informed IBM SkillsBuild's approach to multilingual content delivery, providing a data-driven framework for selecting translation tools based on language pair, content type, and organizational constraints. The batch-translation scripts reduced what would have been weeks of manual work into a 30-minute automated process.</p>
+                    </div>
+
+                    <div class="fade-in" style="margin-top: 2rem;">
+                        <a href="../assets/ai-translation-report.pdf" target="_blank" class="btn btn-primary"><i class="fas fa-file-pdf"></i> Download Full Report (PDF)</a>
+                        <a href="../work.html" class="btn" style="margin-left: 1rem;">← Back to Work</a>
+                    </div>
+
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p class="footer-name">Emile Giovannie ZOUNON</p>
+            <p class="footer-tagline">EdTech & AI Strategist</p>
+            <div class="footer-links">
+                <a href="https://www.linkedin.com/in/emile-giovannie-zounon" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+            </div>
+            <p class="footer-copy">&copy; 2026 Emile Giovannie ZOUNON. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>
